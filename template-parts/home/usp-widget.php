@@ -8,14 +8,14 @@
 ?>
 
 <div class="inline-flex">
-    <i class="icon-icon-awesome-coffee"></i>
-    <p class="strong"><?php the_field('usp_1'); ?></p>
+    <i class="icon-004-fast-delivery"></i>
+    <p class="features-margin strong"><?php the_field('usp_1'); ?></p>
 </div>
 <div class="inline-flex">
-    <i class="icon-icon-awesome-coffee"></i>
-    <p class="strong"><?php the_field('usp_2'); ?></p>
+    <i class="icon-006-customer-service"></i>
+    <p class="features-margin strong"><?php the_field('usp_2'); ?></p>
 </div>
 <div class="inline-flex">
-    <i class="icon-icon-awesome-coffee"></i>
-    <p class="strong"><?php the_field('usp_3'); ?></p>
+    <i class="icon-003-delivery-package"></i>
+    <p class="features-margin strong"><?php the_field('usp_3'); ?></p>
 </div>  

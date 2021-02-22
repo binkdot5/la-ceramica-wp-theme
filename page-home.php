@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Mia&J
+ * @package La Ceramica
  * 
  */
 
@@ -17,12 +17,8 @@ get_header();
     </section>
     <section class="lc_col_2 animate__animated animate__zoomIn">
         <h2 class="hidden">Column 2</h2>
-        <div class="cell-1 inline-flex">
-            <hgroup class="cbs">
-                <h3>Complete</h3>
-                <h3>Bathroom</h3>
-                <h3>Solutions</h3>
-            </hgroup>
+        <div class="cell-1">
+            <h2><?php the_field('lc_subheading');?></h2>
             <?php
                 $page = get_post(); 
                 $content = apply_filters( 'the_content', $page->post_content ); 

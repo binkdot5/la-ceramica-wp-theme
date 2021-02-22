@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme
+ * The header of the theme.
  *
  * This is the template that displays all of the <head> section and initiates <body>
  *
@@ -26,6 +26,15 @@
         }
     ?>
 	<?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SDV1BHF4N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6SDV1BHF4N');
+    </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -42,16 +51,18 @@
                     $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
                     echo '<a href="' . esc_url( home_url( '/' ) ) . '"><img id="logo" src="' . esc_url( $custom_logo_url ) . '" alt="la ceramica logo"> </a>';
                 ?>
-                <button class="mob-nav-show"><i class="icon-icon-material-menu"></i></button>
-                <nav class="mob-nav overlay">
-                    <?php get_template_part('/template-parts/header/mobile-nav'); ?>
-                </nav>
+                <button class="mob-nav-show"><i class="icon-008-list"></i></button>
             </div>
             <address id="mainAddress">
                 <?php the_field( 'store_address' ); ?>
             </address>
             <nav class="fixedNav">
                 <h3 class="hidden">Site Navigation</h3>
+                <!-- <a href="">MENU</a> -->
                 <?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
             </nav>
+            <nav class="overlay mob-nav">
+                <?php get_template_part('/template-parts/header/mobile-nav'); ?>
+            </nav>
+            
         </header>

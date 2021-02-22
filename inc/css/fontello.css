@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'la-ceramica-icons';
-  src: url('../../fonts/la-ceramica-icons.eot?12593212');
-  src: url('../../fonts/la-ceramica-icons.eot?12593212#iefix') format('embedded-opentype'),
-       url('../../fonts/la-ceramica-icons.woff2?12593212') format('woff2'),
-       url('../../fonts/la-ceramica-icons.woff?12593212') format('woff'),
-       url('../../fonts/la-ceramica-icons.ttf?12593212') format('truetype'),
-       url('../../fonts/la-ceramica-icons.svg?12593212#la-ceramica-icons') format('svg');
+  font-family: 'fontello';
+  src: url('../../fonts/fontello.eot?10045679');
+  src: url('../../fonts/fontello.eot?10045679#iefix') format('embedded-opentype'),
+       url('../../fonts/fontello.woff2?10045679') format('woff2'),
+       url('../../fonts/fontello.woff?10045679') format('woff'),
+       url('../../fonts/fontello.ttf?10045679') format('truetype'),
+       url('../../fonts/fontello.svg?10045679#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,14 +14,14 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'la-ceramica-icons';
-    src: url('../font/la-ceramica-icons.svg?12593212#la-ceramica-icons') format('svg');
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?10045679#fontello') format('svg');
   }
 }
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "la-ceramica-icons";
+  font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: never;
@@ -55,9 +55,11 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-icon-awesome-award:before { content: '\e800'; } /* '' */
-.icon-icon-awesome-coffee:before { content: '\e801'; } /* '' */
-.icon-icon-awesome-facebook-square:before { content: '\e802'; } /* '' */
-.icon-icon-awesome-instagram:before { content: '\e803'; } /* '' */
-.icon-icon-awesome-linkedin:before { content: '\e804'; } /* '' */
-.icon-icon-material-menu:before { content: '\e805'; } /* '' */
+.icon-006-customer-service:before { content: '\e801'; } /* '' */
+.icon-007-facebook:before { content: '\e802'; } /* '' */
+.icon-008-linkedin-logo:before { content: '\e803'; } /* '' */
+.icon-001-instagram:before { content: '\e804'; } /* '' */
+.icon-002-cancel:before { content: '\e805'; } /* '' */
+.icon-003-delivery-package:before { content: '\e806'; } /* '' */
+.icon-004-fast-delivery:before { content: '\e807'; } /* '' */
+.icon-008-list:before { content: '\e808'; } /* '' */

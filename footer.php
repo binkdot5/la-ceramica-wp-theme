@@ -10,7 +10,7 @@
 
 ?>
 
-        <footer class="inline-flex animate__animated animate__fadeIn">
+        <footer class="inline-flex cell-3 animate__animated animate__fadeIn">
             <h2 class="hidden">Footer</h2>
             <div class="information">
                 <?php get_template_part( 'template-parts/footer/moreinfo-widget' ); ?>
