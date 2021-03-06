@@ -26,12 +26,13 @@ get_header();
             ?>
         </div>
         <div class="cell-2">
-            <img class="col2-img" loading="lazy" src="<?php the_field('carousel_5'); ?>" alt="oyster whirlpool frontal" />
+            <img class="col2-img" loading="lazy" src="<?php the_field('carousel_7'); ?>" alt="oyster whirlpool frontal" />
         </div>
         <div class="cell-3 inline-flex usp">
-            <?php get_template_part( 'template-parts/home/usp-widget' ); ?>  
+            <?php get_template_part( 'template-parts/home/usp-widget' ); ?>
         </div>
-        
+        <h2>Authorised Dealerships</h2>
+        <?php get_template_part( 'template-parts/company/dealers-widget' ); ?>
     </section>
 
     

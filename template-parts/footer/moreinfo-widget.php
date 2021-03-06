@@ -9,7 +9,6 @@
 
 <div class="d-flex-column">
     <h3 class="blueHeading">MORE INFORMATION</h3>
-    <a href="#">CATALOGUE 2020</a>
-    <a href="#">WORK WITH US</a>
-    <a href="#">GET PRODUCT SUPPORT</a>
+    <a href="<?php echo site_url('/catalogue'); ?>">CATALOGUE 2020</a>
+    <a href="<?php echo site_url('/privacy-policy'); ?>">PRIVACY POLICY</a>
 </div>

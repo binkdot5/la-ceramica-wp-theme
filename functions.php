@@ -17,8 +17,8 @@ function laceramica_scripts() {
     wp_enqueue_style( 'laceramica-icons', get_template_directory_uri() . '/inc/css/fontello.css', array(), '1.0', 'all');
     wp_enqueue_style( 'laceramica-style', get_stylesheet_uri(), array(), '1.0', 'all');
     // wp_enqueue_script( 'vue', get_template_directory_uri() . '/inc/js/vue.js', array(), '2.6.12', true);
-    wp_enqueue_script( 'jquery-cdn', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
-    wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.3.1.min.js', array(), '3.3.1', true);
+    wp_enqueue_script( 'jquery-cdn', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '3.5.1', true);
+    wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.3.2.min.js', array(), '3.3.2', true);
     wp_enqueue_script( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), '1.0', true);
     wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '1.0', true);    
 }
