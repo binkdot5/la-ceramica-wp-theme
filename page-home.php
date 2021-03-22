@@ -32,7 +32,7 @@ get_header();
             <?php get_template_part( 'template-parts/home/usp-widget' ); ?>
         </div>
         <h2>Authorised Dealerships</h2>
-        <?php get_template_part( 'template-parts/company/dealers-widget' ); ?>
+        <?php get_template_part( 'template-parts/home/dealers-widget' ); ?>
     </section>
 
     

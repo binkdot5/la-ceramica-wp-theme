@@ -6,22 +6,43 @@ Author URI: https://binkdot5.online/
 Description: Custom Theme for La Ceramica and group of companies. Powered by Wordpress.
 Version: 1.0
 */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&display=swap");
+@font-face {
+  font-family: 'barlowlight';
+  src: url("fonts/barlow-light-webfont.eot");
+  src: url("fonts/barlow-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/barlow-light-webfont.woff2") format("woff2"), url("fonts/barlow-light-webfont.woff") format("woff"), url("fonts/barlow-light-webfont.ttf") format("truetype"), url("fonts/barlow-light-webfont.svg#barlowlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'barlowregular';
+  src: url("fonts/barlow-regular-webfont.eot");
+  src: url("fonts/barlow-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/barlow-regular-webfont.woff2") format("woff2"), url("fonts/barlow-regular-webfont.woff") format("woff"), url("fonts/barlow-regular-webfont.ttf") format("truetype"), url("fonts/barlow-regular-webfont.svg#barlowregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'barlowsemibold';
+  src: url("fonts/barlow-semibold-webfont.eot");
+  src: url("fonts/barlow-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/barlow-semibold-webfont.woff2") format("woff2"), url("fonts/barlow-semibold-webfont.woff") format("woff"), url("fonts/barlow-semibold-webfont.ttf") format("truetype"), url("fonts/barlow-semibold-webfont.svg#barlowsemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'barlowbold';
+  src: url("fonts/barlow-bold-webfont.eot");
+  src: url("fonts/barlow-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/barlow-bold-webfont.woff2") format("woff2"), url("fonts/barlow-bold-webfont.woff") format("woff"), url("fonts/barlow-bold-webfont.ttf") format("truetype"), url("fonts/barlow-bold-webfont.svg#barlowbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .hidden {
   display: none !important; }
 
 body {
   margin: 60px;
   padding: 0 30px 0 30px;
-  font-family: "Barlow", Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: "barlowregular", Helvetica, sans-serif;
   color: #565656;
   font-size: 14px;
   line-height: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Barlow", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "barlowsemibold", Helvetica, sans-serif;
   letter-spacing: 0.45px;
   color: #181818; }
 
@@ -55,6 +76,7 @@ address {
 nav {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: "barlowsemibold", Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -103,8 +125,7 @@ nav a:hover {
 
 .blueHeading {
   color: #00CBE8 !important;
-  font-family: 'Barlow', Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "barlowsemibold", Helvetica, sans-serif;
   font-size: 1rem;
   letter-spacing: 1.5px; }
 
@@ -129,7 +150,8 @@ nav a:hover {
   flex-direction: column; }
 
 .strong {
-  font-weight: 600;
+  font-family: "barlowsemibold", Helvetica, sans-serif;
+  font-weight: 500;
   color: #181818; }
 
 .body-margin {
@@ -353,6 +375,7 @@ div.wpforms-container-full {
 
 div.wpforms-container-full .wpforms-form .wpforms-field-label {
   display: block;
+  font-family: "barlowbold", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 16px;
   float: none;
@@ -375,11 +398,14 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
 .logo-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.body-margin {
+  margin-bottom: 0px; }
+
 @media all and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
   body {
     margin: 10px;
     padding: 10px 25px 0 25px;
-    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-family: "barlowregular", Helvetica, sans-serif;
     font-weight: 400;
     color: #565656; }
 
@@ -438,7 +464,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
   body {
     margin: 10px;
     padding: 10px 25px 0 25px;
-    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-family: "barlowregular", Helvetica, sans-serif;
     font-weight: 400;
     color: #565656; }
 
@@ -474,7 +500,16 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
     display: none; }
 
   .mob-nav-show {
-    display: block; }
+    display: block;
+    height: 70%; }
+
+  .mob-nav-close {
+    position: relative;
+    top: 25%; }
+
+  .mob-address {
+    position: relative;
+    top: 15%; }
 
   .icon-icon-material-menu {
     display: block; }
@@ -497,6 +532,17 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
     margin-bottom: 40px; }
 
   .cell-3 {
+    margin-bottom: 40px; }
+
+  .usp p {
+    padding-left: 0; }
+
+  .usp-row-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+
+  .cell-2 {
     margin-bottom: 40px; } }
 @media all and (max-width: 414px) {
   .col1-img {
@@ -509,7 +555,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
     margin: 10px 0 10px 0; }
 
   .usp p {
-    padding-left: 125px;
+    padding-left: 0;
     padding-right: 0;
     width: 210px;
     margin: 0; }

@@ -11,9 +11,10 @@
 <div class="fg-nav">
     <h2 class="hidden">Mobile Navigation Menu</h2>
     <?php wp_nav_menu( array('theme_location' => 'menu-2') ); ?>
-    <address>
+    <address class="mob-address">
         <?php the_field('store_address'); ?>
         <br />
+        <pre></pre>
         <div>
             <a class="blueHeading" href="tel:<?php the_field('store_tel'); ?>">CALL NOW</a>
         </div>

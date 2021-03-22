@@ -21,4 +21,5 @@
     <div class="cell-1"><img class="col1-img" src="<?php the_field( 'dealer_logo_11' ) ?>" alt="logo 11" /></div>
     <div class="cell-1"><img class="col1-img" src="<?php the_field( 'dealer_logo_12' ) ?>" alt="logo 12" /></div>
     <div class="cell-1"><img class="col1-img" src="<?php the_field( 'dealer_logo_13' ) ?>" alt="logo 13" /></div>
+    <div class="cell-1"><img class="col1-img" src="<?php the_field( 'dealer_logo_14' ) ?>" alt="logo 14" /></div>
 </div>

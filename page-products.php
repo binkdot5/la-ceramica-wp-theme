@@ -21,6 +21,12 @@ get_header();
                 </a>
             </div>
             <div class="brand-container">
+                <a href="<?php echo site_url( '/products/artize', 'http' ); ?>">
+                    <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-1'); ?>"/>
+                    <h2 class="brand-name">Kohler</h2>
+                </a>
+            </div>
+            <div class="brand-container">
                 <a href="<?php echo site_url( '/products/jaquar', 'http' ); ?>">
                     <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-2'); ?>"/>
                     <h2 class="brand-name">Jaquar</h2>
@@ -86,7 +92,7 @@ get_header();
         <div class="brand-container">
             <a href="<?php echo site_url( '/products/glocera', 'http' ); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-wide-1'); ?>"/>
-                <h2 class="brand-name">Glocera</h2>
+                <h2 class="brand-name">Oyster</h2>
             </a>
         </div>
     </div>
@@ -111,9 +117,9 @@ get_header();
     </div>
     <div class="cell-1 inline-grid">
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/hindware', 'http' ); ?>">
+            <a href="<?php echo site_url( '/products/hindware-homes', 'http' ); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-square-1'); ?>"/>
-                <h2 class="brand-name">Hindware</h2>
+                <h2 class="brand-name">Hindware Homes</h2>
             </a>
         </div>
         <div class="brand-container">
