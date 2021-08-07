@@ -16,7 +16,7 @@ get_header();
         <h1>Error Code: 404</h1>
         <p>Looks like you've requested a page that does not exist or is under construction.</p>
         <h6>Try again later.</h6>
-        <p>Head back to <a href="<?php echo site_url() ?>">Home</a></p>
+        <p>Head back to <a href="<?php echo home_url( $path = '/', $scheme = 'relative' ); ?>">Home</a></p>
     </section>
     <section class="lc_col_2 animate__animated animate__zoomIn body-margin">
     </section>

@@ -1,10 +1,18 @@
 /*
 Theme Name: La Ceramica
-Theme URI: https://binkdot5.online
+Theme URI: https://laceramica.in
 Author: Karan Bindal
-Author URI: https://binkdot5.online/
+Author URI: https://karanbindal.live
 Description: Custom Theme for La Ceramica and group of companies. Powered by Wordpress.
-Version: 1.0
+Version: 1.1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: la-ceramica
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 @font-face {
   font-family: 'barlowlight';
@@ -55,10 +63,9 @@ li {
 a {
   color: #181818;
   text-decoration: none; }
-
-a:hover {
-  color: #00CBE8;
-  text-decoration: none; }
+  a :hover {
+    color: #00CBE8;
+    text-decoration: none; }
 
 button {
   background-color: #fff;
@@ -83,14 +90,12 @@ nav {
   display: flex;
   justify-content: flex-end;
   flex-direction: column; }
-
-nav li {
-  padding: 15px 0 15px 0; }
-
-nav a:hover {
-  color: #565656;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #565656; }
+  nav li {
+    padding: 15px 0 15px 0; }
+  nav a:hover {
+    color: #565656;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #565656; }
 
 .no-mt {
   margin-top: 0; }
@@ -163,19 +168,15 @@ nav a:hover {
   grid-template-columns: 1fr 1.5fr 2.5fr;
   grid-template-rows: 1fr;
   grid-column-gap: 45px; }
-
-.lcLayout > header {
-  display: grid;
-  grid-area: head; }
-
-.lcLayout > section.lc_col_1 {
-  grid-area: body1; }
-
-.lcLayout > section.lc_col_2 {
-  grid-area: body2; }
-
-.lcLayout > footer {
-  grid-area: foot; }
+  .lcLayout > header {
+    display: grid;
+    grid-area: head; }
+  .lcLayout > section.lc_col_1 {
+    grid-area: body1; }
+  .lcLayout > section.lc_col_2 {
+    grid-area: body2; }
+  .lcLayout > footer {
+    grid-area: foot; }
 
 .lc_col_1, .lc_col_2 {
   overflow: hidden; }
@@ -205,61 +206,55 @@ nav a:hover {
 
 .cbs {
   font-size: 22px; }
+  .cbs h3 {
+    margin: 0;
+    padding-right: 30px;
+    line-height: 26px; }
 
-.cbs h3 {
-  margin: 0;
-  padding-right: 30px;
-  line-height: 26px; }
-
-.cell-1, .cell-2, cell-3 {
+.cell-1, .cell-2, .cell-3 {
   padding-bottom: 30px; }
 
 .cell-1 p {
   margin: 0; }
-
 .cell-1 h2 {
   margin-top: 0;
-  font-size: 26px; }
+  font-size: 1.5rem; }
 
 .cell-2 h2 {
   margin-top: 0;
-  font-size: 26px; }
+  font-size: 1.5rem; }
 
+/*Company Page - USPs*/
 .usp h3 {
   margin-top: 0;
   margin-bottom: 0;
   color: #00CBE8;
-  font-size: 20px; }
-
-.usp-row-1 {
+  font-size: 1.2rem; }
+.usp .usp-row-1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; }
-
-.usp-row-1 p {
-  width: 115px;
-  font-size: 14px;
-  color: #F3FEFF; }
-
-.usp-row-2 {
+  .usp .usp-row-1 p {
+    width: 115px;
+    font-size: 0.9rem;
+    color: #F3FEFF; }
+  .usp .usp-row-1 #usp-cell-1 {
+    background-color: #181818;
+    padding: 1.75rem;
+    margin: 0 25px 25px 0; }
+  .usp .usp-row-1 #usp-cell-2 {
+    background-color: #181818;
+    padding: 1.75rem;
+    margin-bottom: 25px; }
+.usp .usp-row-2 {
   display: flex; }
+  .usp .usp-row-2 #usp-cell-3 {
+    background-color: #181818;
+    padding: 1.75rem;
+    font-size: 0.9rem;
+    color: #F3FEFF; }
 
-#usp-cell-1 {
-  background-color: #181818;
-  padding: 15px;
-  margin: 0 25px 25px 0; }
-
-#usp-cell-2 {
-  background-color: #181818;
-  padding: 15px;
-  margin-bottom: 25px; }
-
-#usp-cell-3 {
-  background-color: #181818;
-  padding: 15px;
-  font-size: 14px;
-  color: #F3FEFF; }
-
+/*Home Page - Features*/
 .features-margin {
   margin: 0 25px 0 25px; }
 
@@ -277,40 +272,34 @@ nav a:hover {
   font-size: 26pt;
   color: #00CBE8; }
 
+/*Company Page - Awards*/
 .awards {
   margin-top: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
-
-.award {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 25px; }
-
-.award-cell-1 {
-  padding: 5px;
-  background-color: #00CBE8;
-  color: #F3FEFF;
-  margin-right: 15px;
-  height: 75px; }
-
-.award-cell-2 {
-  display: flex;
-  flex-direction: column; }
-
-.award-cell-1 h2, h4 {
-  color: #F3FEFF; }
-
-.award-cell-1 h2 {
-  font-size: 40px;
-  margin: 25px 0 0 15px; }
-
-.award-cell-1 h4 {
-  margin: 36px 15px 0 0; }
-
-.award-cell-2 h4, h5, h6 {
-  margin: 0;
-  color: #181818; }
+  .awards .award {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px; }
+    .awards .award .award-cell-1 {
+      padding: 5px;
+      background-color: #00CBE8;
+      color: #F3FEFF;
+      margin-right: 15px;
+      height: 75px; }
+      .awards .award .award-cell-1 h2, .awards .award .award-cell-1 h4 {
+        color: #F3FEFF; }
+      .awards .award .award-cell-1 h2 {
+        font-size: 40px;
+        margin: 25px 0 0 15px; }
+      .awards .award .award-cell-1 h4 {
+        margin: 36px 15px 0 0; }
+    .awards .award .award-cell-2 {
+      display: flex;
+      flex-direction: column; }
+    .awards .award h4, .awards .award h5, .awards .award h6 {
+      margin: 0;
+      color: #181818; }
 
 .product-grid-margin {
   margin-bottom: 27px; }
@@ -318,55 +307,31 @@ nav a:hover {
 .product-square {
   max-width: 100%; }
 
-.brand-container:hover {
-  transform: scale(1.025);
-  opacity: 1;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%); }
+.brand-container {
+  display: inline-block; }
+  .brand-container :hover {
+    transform: scale(1.025);
+    opacity: 1;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
+  .brand-container :hover .brand-name {
+    display: block; }
+  .brand-container .brand-name {
+    display: none;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    color: #F3FEFF;
+    margin: 0;
+    max-width: 6rem; }
 
-.brand-container:hover .brand-name {
-  display: block; }
-
-.brand-name {
-  display: none;
-  position: relative;
-  bottom: 50px;
-  left: 25px;
-  color: #F3FEFF;
-  margin: 0; }
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.brand-overlay {
-  position: absolute;
-  bottom: 0;
-  background: black;
-  background: rgba(0, 0, 0, 0.5);
-  /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center; }
-
-.brand-overlay h2 {
-  color: #F3FEFF; }
-
+/* Slick Slider CSS */
 .slick-prev.slick-arrow {
   display: none; }
 
 .slick-next.slick-arrow {
   display: none; }
-
-.brand-container {
-  display: inline-block; }
 
 /* WP Forms Classes */
 div.wpforms-container-full {
@@ -456,10 +421,10 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
 
   .lcLayout {
     display: grid;
-    grid-template-areas: "head body1 body2" "head foot foot";
-    grid-template-columns: 15% 30% 45%;
-    grid-template-rows: 1fr;
-    grid-column-gap: 45px; } }
+    grid-template-areas: "head body1" "head body2" "head foot";
+    grid-template-columns: 15% 75%;
+    grid-template-rows: auto;
+    grid-column-gap: 100px; } }
 @media all and (max-width: 768px) {
   body {
     margin: 10px;

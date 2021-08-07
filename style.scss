@@ -1,10 +1,18 @@
 /*
 Theme Name: La Ceramica
-Theme URI: https://binkdot5.online
+Theme URI: https://laceramica.in
 Author: Karan Bindal
-Author URI: https://binkdot5.online/
+Author URI: https://karanbindal.live
 Description: Custom Theme for La Ceramica and group of companies. Powered by Wordpress.
-Version: 1.0
+Version: 1.1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: la-ceramica
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 @font-face {
@@ -97,11 +105,11 @@ li {
 a {
     color: $black;
     text-decoration: none;
-}
 
-a:hover {
-    color: $brandColor;
-    text-decoration: none;
+    :hover {
+        color: $brandColor;
+        text-decoration: none;
+    }
 }
 
 button {
@@ -130,16 +138,16 @@ nav {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-}
 
-nav li {
-    padding: 15px 0 15px 0;
-}
+    li {
+        padding: 15px 0 15px 0;
+    }
 
-nav a:hover {
-    color: $bodyColor;
-    padding-bottom: 3px;
-    border-bottom: 2px solid $bodyColor;
+    a:hover {
+        color: $bodyColor;
+        padding-bottom: 3px;
+        border-bottom: 2px solid $bodyColor;
+    }
 }
 
 .no-mt {
@@ -227,23 +235,23 @@ nav a:hover {
     grid-template-columns: 1fr 1.5fr 2.5fr;
     grid-template-rows: 1fr;
     grid-column-gap: 45px;
-}
 
-.lcLayout > header {
-    display: grid;
-    grid-area: head;
-}
+    > header {
+        display: grid;
+        grid-area: head;
+    }
 
-.lcLayout > section.lc_col_1 {
-    grid-area: body1;
-}
+    > section.lc_col_1 {
+        grid-area: body1;
+    }
 
-.lcLayout > section.lc_col_2 {
-    grid-area: body2;
-}
+    > section.lc_col_2 {
+        grid-area: body2;
+    }
 
-.lcLayout > footer {
-    grid-area: foot;
+    > footer {
+        grid-area: foot;
+    }
 }
 
 .lc_col_1, .lc_col_2 {
@@ -281,74 +289,83 @@ nav a:hover {
 
 .cbs {
     font-size: 22px;
+
+    h3 {
+        margin: 0;
+        padding-right: 30px;
+        line-height: 26px;
+    }
 }
 
-.cbs h3 {
-    margin: 0;
-    padding-right: 30px;
-    line-height: 26px;
-}
-
-.cell-1, .cell-2, cell-3 {
+.cell-1, .cell-2, .cell-3 {
     padding-bottom: 30px;
 }
 
-.cell-1 p {
-    margin: 0;
+.cell-1 {
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
 }
 
-.cell-1 h2 {
-    margin-top: 0;
-    font-size: 26px;
+.cell-2 {
+    h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
 }
 
-.cell-2 h2 {
-    margin-top: 0;
-    font-size: 26px;
+
+/*Company Page - USPs*/
+.usp {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $brandColor;
+        font-size: 1.2rem;
+    }
+
+    .usp-row-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+        p {
+            width: 115px;
+            font-size: 0.9rem;
+            color: $brandWhite;
+        }
+
+        #usp-cell-1 {
+            background-color: #181818;
+            padding: 1.75rem;
+            margin: 0 25px 25px 0; 
+        }
+
+        #usp-cell-2 {
+            background-color: $black;
+            padding: 1.75rem;
+            margin-bottom: 25px;
+        }
+    }
+
+    .usp-row-2 {
+        display: flex;
+
+        #usp-cell-3 {
+            background-color: $black;
+            padding: 1.75rem;
+            font-size: 0.9rem;
+            color: $brandWhite;
+        }
+    }
 }
 
-.usp h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $brandColor;
-    font-size: 20px
-}
-
-.usp-row-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.usp-row-1 p {
-    width: 115px;
-    font-size: 14px;
-    color: $brandWhite;
-}
-
-.usp-row-2 {
-    display: flex;
-}
-
-#usp-cell-1 {
-    background-color: #181818;
-    padding: 15px;
-    margin: 0 25px 25px 0; 
-}
-
-#usp-cell-2 {
-    background-color: $black;
-    padding: 15px;
-    margin-bottom: 25px;
-}
-
-#usp-cell-3 {
-    background-color: $black;
-    padding: 15px;
-    font-size: 14px;
-    color: $brandWhite;
-}
-
+/*Home Page - Features*/
 .features-margin {
     margin: 0 25px 0 25px;
 }
@@ -369,117 +386,85 @@ nav a:hover {
     font-size: 26pt;
     color: $brandColor;
 }
-   
+
+/*Company Page - Awards*/
 .awards {
     margin-top: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
 
-.award {
-    display: flex;
-    flex-direction: row;
-    // justify-content: space-between;
-    margin-bottom: 25px;
-}
+    .award {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
 
-.award-cell-1 {
-    padding: 5px;
-    background-color: #00CBE8;
-    color: #F3FEFF;
-    margin-right: 15px; 
-    height: 75px;
-  }
+        .award-cell-1 {
+            padding: 5px;
+            background-color: #00CBE8;
+            color: #F3FEFF;
+            margin-right: 15px; 
+            height: 75px;
 
-.award-cell-2 {
-    display: flex;
-    flex-direction: column;
-}
+            h2, h4 {
+                color: $brandWhite;
+            }
 
-.award-cell-1 h2, h4 {
-    color: $brandWhite;
-}
+            h2 {
+                font-size: 40px;
+                margin: 25px 0 0 15px; 
+            }
 
-.award-cell-1 h2 {
-    font-size: 40px;
-    margin: 25px 0 0 15px; 
-}
+            h4 {
+                margin: 36px 15px 0 0; 
+            }
+        }
 
-.award-cell-1 h4 {
-    margin: 36px 15px 0 0; 
-}
+        .award-cell-2 {
+            display: flex;
+            flex-direction: column;
+        }
 
-.award-cell-2 h4, h5, h6 {
-    margin: 0;
-    color: $black;
+        h4, h5, h6 {
+            margin: 0;
+            color: $black;
+        }
+    }
 }
 
 .product-grid-margin {
     margin-bottom: 27px;
 }
 
-// .product-tall {
-//     max-width: 48.5%;
-// }
-
-// .product-tall-2 {
-//     max-width: 35.3%;
-// }
-
-// .product-tall-3 {
-//     max-width: 61%;
-//     // margin-right: 40px;
-// }
-
 .product-square {
     max-width: 100%;
 }
 
-.brand-container:hover {
-    transform: scale(1.025);
-    opacity: 1;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+.brand-container {
+    display: inline-block;
+
+    :hover {
+        transform: scale(1.025);
+        opacity: 1;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
+
+    :hover .brand-name  {
+        display: block;
+    }
+
+    .brand-name {
+        display: none;
+        position: absolute;
+        bottom: 2rem;
+        left: 1.5rem;
+        color: $brandWhite;
+        margin: 0;
+        max-width: 6rem;
+    }
 }
 
-.brand-container:hover .brand-name  {
-    display: block;
-}
-
-.brand-name {
-    display: none;
-    position: relative;
-    bottom: 50px;
-    left: 25px;
-    color: $brandWhite;
-    margin: 0;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.brand-overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.brand-overlay h2 {
-    color: $brandWhite;
-}
-
+/* Slick Slider CSS */
 .slick-prev.slick-arrow {
     display: none;
 }
@@ -488,12 +473,7 @@ nav a:hover {
     display: none;
 }
 
-.brand-container {
-    display: inline-block;
-}
-
 /* WP Forms Classes */
-
 div.wpforms-container-full {
     margin-left: 0;
     margin-right: 0;
@@ -530,6 +510,7 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
 .body-margin {
     margin-bottom: 0px; 
 }
+
 //Anything below iPad Pro will display the mobile site
 @media all and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
     body {
@@ -604,10 +585,10 @@ div.wpforms-container-full .wpforms-form .wpforms-page-button {
 
     .lcLayout {
         display: grid;
-        grid-template-areas: "head body1 body2" "head foot foot";
-        grid-template-columns: 15% 30% 45%;
-        grid-template-rows: 1fr;
-        grid-column-gap: 45px; 
+        grid-template-areas: "head body1" "head body2" "head foot";
+        grid-template-columns: 15% 75%;
+        grid-template-rows: auto;
+        grid-column-gap: 100px; 
     }
 
 

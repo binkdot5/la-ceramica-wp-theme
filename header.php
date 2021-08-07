@@ -19,22 +19,12 @@
         if ( ! function_exists( '_wp_render_title_tag' ) ) {
             function theme_slug_render_title() {
         ?>
-        <title><?php wp_title( '|', true, 'right' ); ?></title>
         <?php
             }
             add_action( 'wp_head', 'theme_slug_render_title' );
         }
     ?>
 	<?php wp_head(); ?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SDV1BHF4N"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-6SDV1BHF4N');
-    </script>
 </head>
 
 <body <?php body_class(); ?>>

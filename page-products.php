@@ -15,21 +15,15 @@ get_header();
     <div class="cell-1">
         <div class="product-grid-margin inline-grid">
             <div class="brand-container">
-                <a href="<?php echo site_url( '/products/artize', 'http' ); ?>">
+                <a href="<?php the_field('lc-products-image-tall-1-link'); ?>">
                     <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-1'); ?>"/>
-                    <h2 class="brand-name">Artize</h2>
+                    <img class="brand-name" src="<?php the_field('lc-products-image-tall-1-heading'); ?>" />
                 </a>
             </div>
             <div class="brand-container">
-                <a href="<?php echo site_url( '/products/artize', 'http' ); ?>">
-                    <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-1'); ?>"/>
-                    <h2 class="brand-name">Kohler</h2>
-                </a>
-            </div>
-            <div class="brand-container">
-                <a href="<?php echo site_url( '/products/jaquar', 'http' ); ?>">
+                <a href="<?php the_field('lc-products-image-tall-2-link'); ?>">
                     <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-2'); ?>"/>
-                    <h2 class="brand-name">Jaquar</h2>
+                    <img class="brand-name" src="<?php the_field('lc-products-image-tall-2-heading'); ?>" />
                 </a>
             </div>
         </div>
@@ -42,9 +36,15 @@ get_header();
     <div class="cell-2">
         <h2 class="hidden">Photo 5</h2>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/geberit', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-wide-2-link'); ?>">
                 <img class="col2-img product-square" src="<?php the_field('lc-products-image-wide-2'); ?>"/>
-                <h2 class="brand-name">Geberit</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-wide-2-heading'); ?>" />
+            </a>
+        </div>
+        <div class="brand-container">
+            <a href="<?php the_field('lc-products-image-wide-5-link'); ?>">
+                <img class="col2-img product-square" src="<?php the_field('lc-products-image-wide-5'); ?>"/>
+                <img class="brand-name" src="<?php the_field('lc-products-image-wide-5-heading'); ?>" />
             </a>
         </div>
     </div>
@@ -56,15 +56,15 @@ get_header();
     <div class="cell-3">
         <div class="product-grid-margin inline-grid">
             <div class="brand-container">
-                <a href="<?php echo site_url( '/products/paqos', 'http' ); ?>">
+                <a href="<?php the_field('lc-products-image-tall-4-link'); ?>">
                     <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-4'); ?>"/>
-                    <h2 class="brand-name">Paqos</h2>
+                    <img class="brand-name" src="<?php the_field('lc-products-image-tall-4-heading'); ?>" />
                 </a>
             </div>
             <div class="brand-container">
-                <a href="<?php echo site_url( '/products/johnson', 'http' ); ?>">
+                <a href="<?php the_field('lc-products-image-tall-5-link'); ?>">
                     <img class="col2-img product-tall" src="<?php the_field('lc-products-image-tall-5'); ?>"/>
-                    <h2 class="brand-name">H&R Johnson</h2>
+                    <img class="brand-name" src="<?php the_field('lc-products-image-tall-5-heading'); ?>" />
                 </a>
             </div>
         </div>
@@ -78,9 +78,9 @@ get_header();
     <div class="cell-3">
         <h2 class="hidden">Photo 6</h2>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/welspun-flooring', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-wide-3-link'); ?>">
                 <img class="col2-img product-square" src="<?php the_field('lc-products-image-wide-3'); ?>"/>
-                <h2 class="brand-name">Welspun Floorings</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-wide-3-heading'); ?>" />
             </a>
         </div>
     </div>
@@ -90,24 +90,24 @@ get_header();
     <div class="cell-1">
         <h2 class="hidden">Photo 3</h2>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/glocera', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-wide-1-link'); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-wide-1'); ?>"/>
-                <h2 class="brand-name">Oyster</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-wide-1-heading'); ?>" />
             </a>
         </div>
     </div>
     <div class="cell-2 inline-grid">
         <h2 class="hidden">Photo 3 & 4</h2>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/oyster', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-tall-3-link'); ?>">
                 <img class="col2-img product-square" src="<?php the_field('lc-products-image-tall-3'); ?>"/>
-                <h2 class="brand-name">Oyster</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-tall-3-heading'); ?>" />
             </a>
         </div>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/varmora', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-tall-6-link'); ?>">
                 <img class="col2-img product-square" src="<?php the_field('lc-products-image-tall-6'); ?>"/>
-                <h2 class="brand-name">Varmora</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-tall-6-heading'); ?>" />
             </a>
         </div>
     </div>
@@ -117,23 +117,23 @@ get_header();
     </div>
     <div class="cell-1 inline-grid">
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/hindware-homes', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-square-1-link'); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-square-1'); ?>"/>
-                <h2 class="brand-name">Hindware Homes</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-square-1-heading'); ?>" />
             </a>
         </div>
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/viega', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-square-2-link'); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-square-2'); ?>"/>
-                <h2 class="brand-name">Viega</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-square-2-heading'); ?>" />
             </a>
         </div>
     </div>
     <div class="cell-3">
         <div class="brand-container">
-            <a href="<?php echo site_url( '/products/hindware-kitchen-ensemble', 'http' ); ?>">
+            <a href="<?php the_field('lc-products-image-wide-4-link'); ?>">
                 <img class="col2-img" src="<?php the_field('lc-products-image-wide-4'); ?>"/>
-                <h2 class="brand-name">Hindware Kitchen Ensemble</h2>
+                <img class="brand-name" src="<?php the_field('lc-products-image-wide-4-heading'); ?>" />
             </a>
         </div>
     </div>

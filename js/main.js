@@ -1,8 +1,8 @@
 (function(){
-    console.log('SEAF is fired! Developer: Karan Bindal');
+    //console.log('SEAF is fired! Developer: Karan Bindal');
 
     //Code for Slick slider
-    $('.slider_1').slick({
+    jQuery('.slider_1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -15,7 +15,7 @@
         cssEase: 'linear'
     });
     
-    $('.slider_2').slick({
+    jQuery('.slider_2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -28,7 +28,7 @@
         cssEase: 'linear'
     });
 
-    $('.dealers_slider_1').slick({
+    jQuery('.dealers_slider_1').slick({
         slidesToShow: 4,
         slidesToScroll: 2,
         autoplay: true,
